@@ -20,7 +20,7 @@ rescue StandardError
 	if tries < 3
 		retry
 	else
-		`curl -X POST --data-urlencode 'payload={"text": "The 311 website is down down dowwwnnnn."}' #{slack_url}`
+		`curl -X POST --data-urlencode 'payload={"text": "The 311 website is down dowwwnnnn."}' #{slack_url}`
 	end
 end
 lyric_array.reject!(&:empty?)
